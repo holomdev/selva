@@ -35,8 +35,11 @@
     </header>
 
     <main>
+
+        <!-- hero -->
         <section class="relative h-screen">
             <img src="/assets/images/hero.jpg" alt="Puerto Morelos Sunset" class="w-full h-full object-cover">
+            
             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                 <div class="text-center text-white">
                     <h1 class="text-5xl font-bold mb-4">Descubre el encanto de</h1>
@@ -57,43 +60,64 @@
             </div>
         </section>
 
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-8">Un Paraíso por Descubrir</h2>
-                <p class="text-lg text-center max-w-3xl mx-auto mb-8">
-                    Un pintoresco pueblo pesquero en el corazón de la Riviera Maya, en donde la vida se siente como unas vacaciones interminables.
-                </p>
-                <div class="flex justify-center">
-                    <div class="w-96 h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-                        <svg class="w-20 h-20 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="py-16 bg-blue-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-12">Actividades Imperdibles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                        <img src="/beach-icon.png" alt="Beach Icon" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Relajate en la Playa</h3>
-                        <p>Disfruta de las hermosas playas de arena blanca y aguas cristalinas.</p>
+        <section class="relative overflow-hidden">
+            <!-- Background image -->
+            <div class="absolute inset-0 z-0">
+                <img src="/assets/images/marbg.jpg" alt="Playa de Puerto Morelos" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Content overlay -->
+            <div class="relative z-10 bg-white bg-opacity-90">
+                <div class="container mx-auto px-4 py-16">
+                    <h2 class="text-4xl font-bold text-green-800 mb-8">Un Paraíso por Descubrir</h2>
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <p class="text-lg text-gray-700 mb-4">
+                                Puerto Morelos es el destino perfecto para quienes buscan escapar del bullicio y disfrutar de la serenidad del Caribe mexicano.
+                            </p>
+                            <button class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300">
+                                Descubre más
+                            </button>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="relative w-full h-0 pb-[56.25%]">
+                                <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                        <img src="/snorkel-icon.png" alt="Snorkel Icon" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Snorkel en el Arrecife</h3>
-                        <p>Explora la increíble vida marina en el arrecife mesoamericano.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                        <img src="/cenote-icon.png" alt="Cenote Icon" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Ruta de los Cenotes</h3>
-                        <p>Descubre los místicos cenotes de la región y su belleza natural.</p>
+    
+                    <h3 class="text-3xl font-semibold text-green-800 mt-16 mb-8">Actividades Imperdibles</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <img src="https://via.placeholder.com/150?text=Playa" alt="Playa" class="w-24 h-24 rounded-full mx-auto mb-4">
+                            <h4 class="text-xl font-semibold text-green-700 mb-2">Relájate en la Playa</h4>
+                            <p class="text-gray-600">Disfruta de la suave arena y el cálido sol mientras te relajas en una de las playas más hermosas de la Riviera Maya.</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <img src="https://via.placeholder.com/150?text=Snorkel" alt="Snorkel" class="w-24 h-24 rounded-full mx-auto mb-4">
+                            <h4 class="text-xl font-semibold text-green-700 mb-2">Snorkel en el Arrecife</h4>
+                            <p class="text-gray-600">Explora el Parque Nacional Arrecife de Puerto Morelos, hogar del segundo arrecife de coral más grande del mundo.</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <img src="https://via.placeholder.com/150?text=Cenote" alt="Cenote" class="w-24 h-24 rounded-full mx-auto mb-4">
+                            <h4 class="text-xl font-semibold text-green-700 mb-2">Ruta de los Cenotes</h4>
+                            <p class="text-gray-600">Aventúrate en la Ruta de los Cenotes y descubre estas maravillosas formaciones naturales únicas.</p>
+                        </div>
                     </div>
                 </div>
+    
+                <!-- Decorative elements using Tailwind classes -->
+                <div class="absolute top-1/5 left-0 w-24 h-5 bg-green-400 rounded-full"></div>
+                <div class="absolute bottom-1/10 right-0 w-36 h-7 bg-green-400 rounded-full"></div>
+                
+                <!-- Plants -->
+                <img src="/assets/images/hojatop.png" alt="Planta decorativa 1" class="absolute top-0 left-0">
+                <img src="https://via.placeholder.com/120?text=Planta+2" alt="Planta decorativa 2" class="absolute bottom-0 right-0 w-28 h-28">
+                
+                <!-- Birds -->
+                <img src="https://via.placeholder.com/30?text=Ave+1" alt="Ave decorativa 1" class="absolute top-1/10 right-1/10 w-8 h-8">
+                <img src="https://via.placeholder.com/25?text=Ave+2" alt="Ave decorativa 2" class="absolute top-15/100 right-15/100 w-6 h-6">
             </div>
         </section>
 
