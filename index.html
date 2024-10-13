@@ -10,6 +10,22 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .beach-bg {
+            background-image: url('assets/images/bgsectionbeach.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -59,6 +75,87 @@
                 </a>
             </div>
         </section>
+
+        <section class="relative beach-bg min-h-screen">
+            <div class="absolute inset-0"></div>
+            
+            <!-- Elementos flotantes -->
+            <img src="/assets/images/hojatropical1.png" alt="Hoja de Monstera" class="absolute -top-10 -left-20 w-60 h-60 object-contain float-animation z-90">
+            <img src="/assets/images/hojatropical2.png" alt="Hoja de Monstera" class="absolute top-1/2 -right-20 w-60 h-60 object-contain float-animation z-10">
+            <img src="/assets/images/seagull1.png" alt="Gaviota" class="absolute top-10 right-10 w-30 h-30 object-contain float-animation z-10">
+            <img src="/assets/images/Seagull2.png" alt="Gaviota" class="absolute top-20 right-20 w-20 h-20 object-contain float-animation z-10">
+    
+            <!-- Contenido principal -->
+            <div class="container mx-auto px-4 py-16 relative z-20">
+
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-20 mt-20">
+                    Un pintoresco pueblo pesquero en el corazón de la Riviera Maya,
+                    <br>
+                    en donde la vida se siente como unas vacaciones interminables.
+                </h2>
+    
+                <div class="flex flex-col md:flex-row items-center justify-between mb-16 mt-10">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-4xl font-bold text-green-800 mb-4">Un Paraíso por Descubrir</h3>
+                        <p class="text-gray-600">
+                            Puerto Morelos es el destino perfecto para quienes buscan escapar del bullicio y disfrutar de la serenidad del Caribe mexicano.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="relative w-full h-0 pb-[56.25%]">
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3 class="text-3xl font-bold text-center text-green-800 mb-24">Actividades Imperdibles</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white relative rounded-lg shadow-lg">
+                        <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                            <img src="assets/images/beach-circle.png" alt="Playa" class="w-24 h-24">
+                        </div>
+                        <div class="p-6 pt-16 text-center">
+                            <h2 class="text-xl font-semibold text-green-700 mb-3">Relájate en la Playa</h2>
+                            <p class="text-gray-600">Disfruta de la suave arena y el cálido sol mientras te relajas en una de las playas más hermosas de la Riviera Maya.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white relative rounded-lg shadow-lg">
+                        <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                            <img src="assets/images/snorkeling-circle.png" alt="Playa" class="w-24 h-24">
+                        </div>
+                        <div class="p-6 pt-16 text-center">
+                            <h4 class="text-xl font-semibold text-green-700 mb-3">Snorkel en el Arrecife</h4>
+                            <p class="text-gray-600">
+                                Explora el Parque Nacional Arrecife de Puerto Morelos, hogar del segundo arrecife de coral más grande del mundo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="/placeholder.svg?height=200&width=200" alt="Cenote" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-semibold text-green-700 mb-3">Ruta de los Cenotes</h4>
+                            <p class="text-gray-600">
+                                Aventúrate en la Ruta de los Cenotes y descubre estas maravillas naturales únicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Pie de página -->
+            <div class="relative text-white py-8 z-20">
+                <div class="container mx-auto px-4 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Tu puerta de entrada a la Riviera Maya</h3>
+                    <p class="max-w-2xl mx-auto">
+                        Puerto Morelos está estratégicamente ubicado en la Riviera maya. Disfruta de fácil acceso a atracciones como cenotes, parques naturales y sitios arqueológicos, además de encontrarse a tan solo 30 minutos de Cancún y Playa del Carmen y a 15 minutos del Aeropuerto Internacional de Cancún.
+                    </p>
+                </div>
+            </div>
+        </section>
+
 
 
         <section class="relative overflow-hidden">
