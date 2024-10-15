@@ -11,6 +11,22 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
+        /* colors */
+        .darkMossColor {
+            color: #394a1f;
+        }
+        .darkMossBg {
+            background: #394a1f;
+        }
+
+        .fernGreenColor {
+            color: #64784D;
+        }
+        .fernGreenBg {
+            background: #64784D;
+        }
+
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -49,9 +65,6 @@
         }
         .hover-effect:hover .image-title {
             animation: fadeInUp 0.3s ease-out forwards;
-        }
-        .fernGreen {
-            background: #64784D;
         }
         
         .swiper-container {
@@ -307,20 +320,20 @@
                         <img src="/assets/images/mapa.png" alt="Mapa de Puerto Morelos" class="w-full">
                     </div>
                     <div class="w-full md:w-1/2 md:pl-8">
-                        <h2 class="text-4xl font-bold mb-12">Vive la Magia de Puerto Morelos</h2>
-                        <p class="text-lg mb-6">
+                        <h2 class="text-4xl font-bold mb-12 darkMossColor">Vive la Magia de Puerto Morelos</h2>
+                        <p class="text-lg mb-6 fernGreenColor">
                             En donde cada día es una nueva oportunidad para descubrir lo increíble.
                         </p>
-                        <h3 class="text-3xl font-bold ">Visita nuestro Showroom:</h3>
-                        <p class="text-lg mb-6">
+                        <h3 class="text-3xl font-bold darkMossColor">Visita nuestro Showroom</h3>
+                        <p class="text-lg mb-6 fernGreenColor">
                             <br>Carretera Cancún - Playa del Carmen Km 307
                             <br>Puerto Morelos, Quintana Roo, México
                         </p>
                         <p class="mb-4">
-                            <a href="#" class="inline-block bg-green-600 text-white py-2 px-6 rounded-full hover:bg-green-700 transition duration-300">Google Maps</a>
+                            <a href="#" class="inline-flex justify-center text-white py-2 px-6 rounded-full transition duration-300 fernGreenBg min-w-[200px]">Google Maps</a>
                         </p>
                         <p>
-                            <a href="#" class="inline-block bg-green-600 text-white py-2 px-6 rounded-full hover:bg-green-700 transition duration-300">WAZE</a>
+                            <a href="#" class="inline-flex justify-center text-white py-2 px-6 rounded-full transition duration-300 fernGreenBg min-w-[200px]">WAZE</a>
                         </p>
                     </div>
                 </div>
@@ -329,7 +342,7 @@
 
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-bold mb-8">¡El destino perfecto para un día, una semana o toda la vida!</h2>
+                <h2 class="text-4xl font-bold mb-8 darkMossColor">¡El destino perfecto para un día, una semana o toda la vida!</h2>
                 <div class="space-x-4 mb-8">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -347,18 +360,18 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <p class="text-lg mb-8">
-                    Invierte inteligente en Puerto Morelos
+                <h3 class="text-2xl font-bold darkMossColor">Invierte inteligente en Puerto Morelos</h3>
+                <p class="text-xl mb-8 fernGreenColor">
                     <br>Con una alta demanda turística y un entorno natural espectacular,
                     <br>tus rentas vacacionales serán un éxito asegurado.
                 </p>
-                <a href="#" class="inline-block bg-blue-600 text-white py-3 px-8 rounded-full text-lg hover:bg-blue-700 transition duration-300">Conoce Más</a>
+                <a href="#" class="inline-block text-white py-3 px-8 rounded-full text-lg transition duration-300 fernGreenBg">Conoce Más</a>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-white py-8 fernGreen">
+    <footer class="text-white py-8 fernGreenBg">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-between">
                 <div class="w-full md:w-1/4 mb-6 md:mb-0">
